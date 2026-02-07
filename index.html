@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arduino Robotic Arm Portfolio</title>
+
+<style>
+/* ===== GLOBAL DESIGN ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f7c6ff, #c6d8ff);
+  color: #070007;
+  text-align: center;
+}
+
+/* ===== TOP NAV BAR ===== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+nav a {
+  margin: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: purple;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 40px 30px; /* LESS SPACE */
+  min-height: auto;   /* STOP HUGE SCROLL */
+}
+
+/* ===== HOME LAYOUT ===== */
+.home-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 320px;
+}
+
+/* ===== TEXT STYLE ===== */
+.card p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* ===== IMAGES ===== */
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #d49bff;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 19px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* ===== WHITE BORDERS FOR HEADERS ===== */
+ h2 {
+  border: 3px solid white;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+/* ===== PROJECT SUBSECTION BORDERS ===== */
+#project h2 {
+  border: 3px solid white;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 12px;
+  
+
+
+}
+</style>
+
+</head>
+<body>
+
+<!-- TOP MENU -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#project">Project</a>
+  <a href="#media">Media</a>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home">
+  <h1>Arduino Robotic Arm Portfolio</h1><br>
+  <h2>By Asal Khaknazarova</h2>
+
+  <div class="home-box">
+
+    <div class="card">
+      <h3>About Me</h3>
+      <img src="images/me.jpg" class="circle">
+      <p>
+        I am a senior at Edward R. Murrow High School with a interest in robotics, engineering, and technology. 
+        I enjoy working on hands-on engineering projects, especially those involving Arduino, electronics, and mechanical design. 
+        I am excited to continue exploring engineering in college and beyond.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>My Project</h3>
+      <img src="images/arm.jpg" class="circle">
+      <p>
+        I built a joystick-controlled robotic arm using Arduino and servo motors. 
+        The arm moves in the X and Y directions and can draw using a pen attached to the end. 
+        This project demonstrates robotic motion control and human–machine interaction.
+      </p>
+      <a href="https://youtube.com/shorts/um4NaNlYBQU?si=I4Hjjkpg1Gvalhli" target="_blank">Watch Process Video</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECT SECTION -->
+<section id="project">
+  <h1>Project Process</h1>
+
+  <h2>1. Designing</h2>
+  <p>I used TinkerCAD to design the robotic arm layout, creating a detailed 3D model that allowed me 
+     to visualize each joint, servo placement, and range of motion. 
+     This digital prototype helped me plan the mechanical structure and test how the arm would move before building a physical version, ensuring that all components 
+     would fit together efficiently and function as intended.</p>
+    
+  <div class="gallery">
+    <img src="images/design.jpg">
+    <img src="images/motor.jpg">
+  </div>
+
+  <h2>2. Electronics</h2>
+  <p>I used an Arduino UNO R3 as the main microcontroller to control the arm, along with a servomotor to provide precise movement. 
+     I integrated a joystick as the user interface, allowing me to manually control the arm’s motion. Before assembling the physical components, 
+     I thoroughly tested both the circuit and the code to ensure that the servo responded correctly to the joystick inputs, that the wiring was correct, and that the system performed smoothly without errors</p>
+  <div class="gallery">
+    <img src="images/electronics.jpg">
+    <img src="images/code.jpg">
+  </div>
+
+
+
+  <h2>3. Reflection</h2>
+ <p>
+    This project taught me valuable skills in servo control, Arduino programming, and circuit debugging, as well as the fundamentals of mechanical design.
+    I gained hands-on experience in translating a concept into a working prototype and testing each component. 
+    This process strengthened my understanding of how hardware, software, and mechanical elements interact, and gave me practical experience in applying engineering principles to create functional, real-world devices.
+  </p>
+
+
+
+<!-- MEDIA SECTION -->
+<section id="media">
+  <h1>Media Gallery</h1>
+
+  <div class="gallery">
+    <img src="images/code.jpg">
+    <img src="images/arm.jpg">
+    <img src="images/design.jpg">
+    <img src="images/motor.jpg">
+    <img src="images/electronics.jpg">
+     <img src="images/arm.jpg">
+    
+  </div>
+
+
+<!-- LINKEDIN SECTION -->
+<section id="linkedin">
+  <h2>Connect With Me</h2>
+  <p>
+    <a href="https://www.linkedin.com/in/asal-khaknazarova-87b520347?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+      Visit My LinkedIn Profile
+    </a>
+  </p>
+</section>
+
+</body>
+</html>
