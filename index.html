@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Arduino Robotic Arm Portfolio</title>
+<title>Asal Khaknazarova Portfolio</title>
 
 <style>
+
 /* ===== GLOBAL DESIGN ===== */
 body {
   margin: 0;
@@ -12,63 +13,53 @@ body {
   background: linear-gradient(135deg, #f7c6ff, #c6d8ff);
   color: #070007;
   text-align: center;
+  padding-top: 130px; /* space for bigger header */
+  overflow-x: hidden;
 }
 
-/* ===== TOP NAV BAR ===== */
+/* ===== NAV BAR (BIGGER) ===== */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   background: white;
-  padding: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  padding: 22px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
   z-index: 1000;
 }
 
 nav a {
-  margin: 15px;
+  margin: 25px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
   color: purple;
 }
 
-/* ===== SECTIONS ===== */
-section {
-  padding: 40px 30px; /* LESS SPACE */
-  min-height: auto;   /* STOP HUGE SCROLL */
-}
-
-/* ===== HOME LAYOUT ===== */
-.home-box {
+/* ===== FLEX BOX ===== */
+.flex-box {
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 }
 
+/* ===== CARDS ===== */
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 25px;
+  border-radius: 25px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 320px;
-}
-
-/* ===== TEXT STYLE ===== */
-.card p {
-  text-align: left;
-  line-height: 1.5;
-  font-size: 16px;
+  width: 350px;
 }
 
 /* ===== IMAGES ===== */
 .circle {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #d49bff;
+  border: 6px solid #d49bff;
 }
 
 /* ===== GALLERY ===== */
@@ -80,130 +71,207 @@ section {
 }
 
 .gallery img {
-  width: 300px;
-  border-radius: 19px;
+  width: 320px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ===== WHITE BORDERS FOR HEADERS ===== */
- h2 {
+/* ===== HEADERS ===== */
+h1 { font-size: 42px; }
+
+h2 {
   border: 3px solid white;
   display: inline-block;
-  padding: 8px;
-  border-radius: 12px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 28px;
+  background: rgba(255,255,255,0.4);
 }
 
-/* ===== PROJECT SUBSECTION BORDERS ===== */
-#project h2 {
-  border: 3px solid white;
+p {
+  font-size: 22px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 10px auto;
+  text-align: left;
+}
+
+section {
+  padding: 90px 40px;
+}
+
+/* ===== FUTURE PROJECT SPACING ===== */
+#future {
+  margin-top: 120px;
+}
+
+/* ===== FUTURE APP IMAGE ===== */
+#future .app-img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* ===== YOUTUBE BORDER BUTTON ===== */
+.video-link {
   display: inline-block;
-  padding: 8px;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border: 3px solid purple;
   border-radius: 12px;
-  
-
-
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: purple;
+  background: white;
 }
+
+.video-link:hover {
+  background: purple;
+  color: white;
+}
+
+/* ===== SMALL BLOG PHOTO ===== */
+.blog-small {
+  width: 180px;
+  border-radius: 18px;
+  display: block;
+  margin: 20px auto;
+}
+
 </style>
-
 </head>
-<body>
 
-<!-- TOP MENU -->
+<!-- NAVIGATION -->
 <nav>
   <a href="#home">Home</a>
-  <a href="#project">Project</a>
-  <a href="#media">Media</a>
+  <a href="#engineering">Engineering</a>
+  <a href="#future">Future App</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME SECTION -->
+<!-- HOME -->
 <section id="home">
-  <h1>Arduino Robotic Arm Portfolio</h1><br>
-  <h2>By Asal Khaknazarova</h2>
+<h1>Asal Khaknazarova</h1>
 
-  <div class="home-box">
+<div class="flex-box">
 
-    <div class="card">
-      <h3>About Me</h3>
-      <img src="me.jpg" class="circle">
-      <p>
-        I am a senior at Edward R. Murrow High School with a interest in robotics, engineering, and technology. 
-        I enjoy working on hands-on engineering projects, especially those involving Arduino, electronics, and mechanical design. 
-        I am excited to continue exploring engineering in college and beyond.
-      </p>
-    </div>
+<div class="card">
+<h2>About Me</h2>
+<img src="images/me.jpg" class="circle">
+<p>
+ I am a senior at Edward R. Murrow High School with a passion for robotics, engineering, and technology. I am currently working on hands-on engineering projects, particularly those involving Arduino, electronics, and mechanical design. I am excited to continue exploring electrical engineering in college and beyond.
+</p>
+</div>
 
-    <div class="card">
-      <h3>My Project</h3>
-      <img src="arm.jpg" class="circle">
-      <p>
-        I built a joystick-controlled robotic arm using Arduino and servo motors. 
-        The arm moves in the X and Y directions and can draw using a pen attached to the end. 
-        This project demonstrates robotic motion control and human–machine interaction.
-      </p>
-      <a href="https://youtube.com/shorts/um4NaNlYBQU?si=I4Hjjkpg1Gvalhli" target="_blank">Watch Process Video</a>
-    </div>
+<div class="card">
+<h2>Engineering</h2>
+<img src="images/rg.jpg" class="circle">
+<p>
+My interest in engineering started through gymnastics, analyzing motion and mechanics. Gymnastics taught me the importance of combining creativity with precision, inspiring me to approach engineering projects with both analytical thinking and hands-on experimentation.
+</p>
+</div>
 
-  </div>
+</div>
 </section>
 
-<!-- PROJECT SECTION -->
-<section id="project">
-  <h1>Project Process</h1>
+<!-- ENGINEERING -->
+<section id="engineering">
+<h1>Engineering Portfolio</h1>
 
-  <h2>1. Designing</h2>
-  <p>I used TinkerCAD to design the robotic arm layout, creating a detailed 3D model that allowed me 
+<h2>1. Designing</h2>
+<p>I used TinkerCAD to design the robotic arm layout, creating a detailed 3D model that allowed me 
      to visualize each joint, servo placement, and range of motion. 
      This digital prototype helped me plan the mechanical structure and test how the arm would move before building a physical version, ensuring that all components 
      would fit together efficiently and function as intended.</p>
-    
-  <div class="gallery">
-    <img src="design.jpg">
-    <img src="motor.jpg">
+
+<div class="gallery">
+<img src="images/design.jpg">
+<img src="images/motor.jpg">
+</div>
+
+<h2>2. Electronics</h2>
+<p>I used an Arduino UNO R3 as the main microcontroller to control the robotic arm, along with a servomotor to provide precise movement. I integrated a joystick as the user interface, allowing manual control of the arm’s motion. Before assembling the physical components, I thoroughly tested both the circuit and the code to ensure the servo responded correctly to the joystick inputs and that the wiring was accurate.
+</p>
+<div class="gallery">
+<img src="images/electronics.jpg">
+<img src="images/code.jpg">
+</div>
+
+<h2>3. Reflection</h2>
+<p> I built a joystick-controlled robotic arm using Arduino and servo motors. 
+        The arm moves in the X and Y directions and can draw using a pen attached to the end. 
+        This project demonstrates robotic motion control and human–machine interaction.
+This project taught me servo control, Arduino programming, and mechanical design.</p>
+
+<a href="https://youtube.com/shorts/um4NaNlYBQU?si=I4Hjjkpg1Gvalhli" target="_blank" class="video-link">
+▶ Watch Process Video
+</a>
+
+<div class="gallery">
+<img src="images/arm.jpg">
+</div>
+
+</section>
+
+<!-- FUTURE PROJECT -->
+<section id="future">
+  <h1>Future Project: Virtual Coach App</h1>
+
+  <div class="flex-box">
+    <!-- Text Card -->
+    <div class="card">
+      <p>
+       I am developing the idea for a camera-based motion tracking app after a gymnastics injury, realizing that every athlete needs a personalized approach to training. My early focus is on improving handstand alignment, and I included a photo of myself performing a handstand as a reference for the posture the app will eventually analyze. I plan to research motion tracking tools such as MediaPipe and build a prototype interface for the app. Finally, I will test the system to evaluate its effectiveness.
+      </p>
+    </div>
+
+    <!-- Image Card -->
+    <div class="card future-img">
+      <h3>App Concept Example</h3>
+      <img src="images/my.jpg" class="app-img">
+    </div>
   </div>
+</section>
 
-  <h2>2. Electronics</h2>
-  <p>I used an Arduino UNO R3 as the main microcontroller to control the arm, along with a servomotor to provide precise movement. 
-     I integrated a joystick as the user interface, allowing me to manually control the arm’s motion. Before assembling the physical components, 
-     I thoroughly tested both the circuit and the code to ensure that the servo responded correctly to the joystick inputs, that the wiring was correct, and that the system performed smoothly without errors</p>
-  <div class="gallery">
-    <img src="electronics.jpg">
-    <img src="code.jpg">
-  </div>
+<!-- BLOG SECTION -->
+<section id="blog">
+<h1>Blog & Cultural Exchange</h1>
 
+<p>
+My vlog channel connects Central Asian students with American culture and student life, sharing experiences in education, STEM, and daily life.
+</p>
 
+<div class="gallery">
+  <img src="images/blog1.jpg">
+  <img src="images/blog.jpg">
+  <img src="images/ny.jpg">
+</div>
 
-  <h2>3. Reflection</h2>
- <p>
-    This project taught me valuable skills in servo control, Arduino programming, and circuit debugging, as well as the fundamentals of mechanical design.
-    I gained hands-on experience in translating a concept into a working prototype and testing each component. 
-    This process strengthened my understanding of how hardware, software, and mechanical elements interact, and gave me practical experience in applying engineering principles to create functional, real-world devices.
-  </p>
+<p>
+Through my videos, I aim to foster cross-cultural understanding and inspire others to pursue their passions in STEM and beyond.
+</p>
+<img src="images/blog_me.jpg" class="blog-small">
+<p>
+<a href="https://www.youtube.com/@AsalNazar-s9r" target="_blank">Visit My YouTube Channel</a> |
+<a href="#">Collaborate</a>
+</p>
 
-
-
-<!-- MEDIA SECTION -->
-<section id="media">
-  <h1>Media Gallery</h1>
-
-  <div class="gallery">
-    <img src="code.jpg">
-    <img src="arm.jpg">
-    <img src="design.jpg">
-    <img src="motor.jpg">
-    <img src="electronics.jpg">
-     <img src="arm.jpg">
-    
-  </div>
+</section>
 
 
-<!-- LINKEDIN SECTION -->
-<section id="linkedin">
-  <h2>Connect With Me</h2>
-  <p>
-    <a href="https://www.linkedin.com/in/asal-khaknazarova-87b520347?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
-    LinkedIn Profile
-    </a>
-  </p>
+<!-- CONTACT -->
+<section id="contact">
+<h1>Contact & Collaboration</h1>
+<p>Email: asalnazar2@gmail.com</p>
+
+<p>
+<a href="https://www.linkedin.com/in/asal-khaknazarova-87b520347" target="_blank">
+Visit My LinkedIn Profile
+</a>
+</p>
 </section>
 
 </body>
